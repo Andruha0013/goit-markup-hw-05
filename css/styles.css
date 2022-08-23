@@ -451,10 +451,13 @@ body
     margin-top: 0;
     margin-bottom: 0;
 
-    padding-top: 27px;
-    padding-bottom: 27px;
-
     width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     position: absolute;
 
     bottom: 0;
@@ -764,8 +767,9 @@ body
     margin-top: 0;
     margin-bottom: 0;
 
-    padding-top: 63px;
-    padding-bottom: 63px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     padding-left: 24px;
     padding-right: 24px;
 
@@ -785,7 +789,12 @@ body
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.gallery-item:hover .gallery-short-description
+.gallery-link:hover .gallery-short-description
+{
+    transform: translateY(0);
+}
+
+.gallery-link:focus .gallery-short-description
 {
     transform: translateY(0);
 }
@@ -1215,6 +1224,12 @@ body
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.form-item-input-focus
+{
+    color: var(--main-active-color);
+    border-color: var(--main-active-color);
 }
 
 .form-item-coment
